@@ -38,7 +38,7 @@ if(localStorage.getItem('token')==null){
 function sair(){
     localStorage.removeItem('token')
     localStorage.removeItem('userLogado')
-    window.location.href='http://127.0.0.1:5500/index.html'
+    window.location.href='index.html'
 }
 
 

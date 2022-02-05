@@ -67,7 +67,7 @@ listaUser.forEach((item)=>{
 if (user.value == userValid.nome && senha.value == userValid.senha) {
 
     setTimeout(()=>{
-        window.location.href='http://127.0.0.1:5500/home.html'
+        window.location.href='home.html'
 
     },1000)
     

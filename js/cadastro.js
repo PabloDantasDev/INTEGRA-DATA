@@ -113,7 +113,7 @@ if(validUser&&validSenha&&validRepitaSenha ){
     },3000)
 
     setTimeout(()=>{
-        window.location.href='https://integradata.netlify.app/index.html'
+        window.location.href='index.html'
     },4000)
     
 

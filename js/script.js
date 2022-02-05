@@ -32,7 +32,7 @@ logado.innerHTML= ` Olá ${userLogado.nome}`
 
 if(localStorage.getItem('token')==null){
     alert('Voce Precisa está autenticado para acessar essa pagina')
-    window.location.href='http://127.0.0.1:5500/login.html'
+    window.location.href='login.html'
 }
 
 function sair(){

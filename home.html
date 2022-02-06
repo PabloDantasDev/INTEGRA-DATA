@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTEGRA DATA</title>
 
@@ -56,19 +57,14 @@
 
     <div class="content">
         <h3>INTEGRA DATA</h3>
-        <p>Consultas em um só lugar!</p>
-        
+        <p>Consultas em um só lugar!</p>  
     </div>
-
     <div class="share">
         <a href="#" id="whatsapp" class="fab fa-whatsapp"></a>
         <a href="#" id="telegram" class="fab fa-telegram"></a>
         <a href="#" class="fab fa-instagram"></a>
         <div class="credits" id="copy"> created by <span>Henrique Dantas | Desenvolvedor Full-Stack</span> | all rights reserved </div>
     </div>
-    
-   
-   
 </section>
 
 
@@ -78,36 +74,59 @@
 
     <h1 class="headingCPF"> <span>CONSULTAR</span> CEP </h1>
     
-<!---------------CONSULTA CPF--------------------------------->
-    <form action="">
-        <input type="text" placeholder="Informe o CPF" class="box" id="consultaCPF">
-        <input type="email" placeholder="Nome" class="box" id="cpfNome" disabled>
-        <input type="text" placeholder="Sexo" class="box" id="cpfSexo" disabled>
-        <input type="email" placeholder="Data Nascimento" class="box" id="cpfNascimento" disabled>
-        <input type="text" placeholder="E-mail" class="box" id="cpfEmail" disabled>
-        <input type="email" placeholder="Telefone" class="box" id="cpfTelefone"disabled>
-        <input type="submit" value="Consultar" class="btn" disabled>
+<!---------------CONSULTA CEP--------------------------------->
+<!---------------IDS DE CAMPOS CORRESPONDENTES COM O RETORNO DA API--->
+   
+<form >
+        <input  placeholder="Informe o CEP" class="box" id="cep" maxlength="9">
+        <input type="text" placeholder="Rua" class="box" id="logradouro" disabled>
+        <input  placeholder="Complemento" class="box" id="complemento" disabled>
+        <input  placeholder="Bairro" class="box" id="bairro" disabled>
+        <input  placeholder="Cidade" class="box" id="cidade" disabled>
+        <input  placeholder="Estado" class="box" id="estado"disabled>
+        <input  onclick="pesquisaCep()" id="ccep" type="submit" value="Consultar" class="btn" >
+        <input  onclick="limpaCampos()" id="ccep" type="submit" value=" Nova Consultar" class="btn" >
     </form>
 
 </section>
 <!---------------CONSULTA CPF--------------------------------->
 
-<!---------------CONSULTA CEP--------------------------------->
-<section class="contact" id="cep">
 
-    <h1 class="headingCEP"> <span>CONSULTAR </span> CEP </h1>
-<form action="">
-    <input type="text" placeholder="Informe o CPF" class="box" id="consultaCEP">
-    <input type="email" placeholder="Nome" class="box" id="cpfNome" disabled>
-    <input type="text" placeholder="Sexo" class="box" id="cpfSexo" disabled>
-    <input type="email" placeholder="Data Nascimento" class="box" id="cpfNascimento" disabled>
-    <input type="text" placeholder="E-mail" class="box" id="cpfEmail" disabled>
-    <input type="email" placeholder="Telefone" class="box" id="cpfTelefone"disabled>
-    <input type="submit" value="Consultar" class="btn" disabled>
-</form>
 
-</section>
-<!---------------CONSULTA CEP--------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -186,8 +205,8 @@
 
 
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+
 
 </body>
+<script src="js/script.js"></script>
 </html>

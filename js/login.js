@@ -66,10 +66,10 @@ listaUser.forEach((item)=>{
 
 if (user.value == userValid.nome && senha.value == userValid.senha) {
 
-    setTimeout(()=>{
+    
         window.location.href='home.html'
 
-    },1000)
+   
     
      let token=Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)
      localStorage.setItem("token",token)
@@ -81,12 +81,6 @@ if (user.value == userValid.nome && senha.value == userValid.senha) {
     erro.setAttribute('style','display:block')
     erro.innerHTML='Usuario Ou Senha Incorretos'
     user.focus()
-}
-
-if(user.value && senha.value == ''){
-    erro.setAttribute('style','display:block')
-    erro.innerHTML='Preencha os dados corretamente'
-
 }
 
 }

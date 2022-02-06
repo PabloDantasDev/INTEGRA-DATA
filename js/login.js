@@ -21,7 +21,7 @@ olho.addEventListener('click',()=>{
 function entrar(){
 //pegando campos do formulario de login
 let user = document.querySelector('#user')
-let validUser =false//validando campo preenchido
+
 let senha = document.querySelector('#senha')
 let validSenha =false//validando campo preenchido
 
@@ -59,7 +59,7 @@ listaUser.forEach((item)=>{
             senha: item.senhaCad
             
         }
-        console.log(userValid)
+        
     }
 
 })
@@ -67,12 +67,11 @@ listaUser.forEach((item)=>{
 if (user.value == userValid.nome && senha.value == userValid.senha) {
 
     
-        window.location.href='home.html'
+        window.location.href='http://192.168.0.8:5500/home.html'
 
-   
-    
      let token=Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)
      localStorage.setItem("token",token)
+
     //seta o nome do usuario logado na tela
     localStorage.setItem('userLogado',JSON.stringify(userValid))
 

@@ -67,7 +67,7 @@ listaUser.forEach((item)=>{
 if (user.value == userValid.nome && senha.value == userValid.senha) {
 
     
-        window.location.href='http://192.168.0.8:5500/home.html'
+        window.location.href='home.html'
 
      let token=Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)+Math.random().toString(25).substring(2)
      localStorage.setItem("token",token)

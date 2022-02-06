@@ -48,7 +48,7 @@ function sair(){
 'use strict';
 
 const limpaCampos=(endereco)=>{
-
+    document.getElementById('cep').value=''
     document.getElementById('logradouro').value =endereco=''
     document.getElementById('complemento').value =endereco=''
     document.getElementById('bairro').value =endereco=''

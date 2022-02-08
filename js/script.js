@@ -48,7 +48,7 @@ function sair(){
 'use strict';
 
 const limpaCampos=(endereco)=>{
-    document.getElementById('cep').value=''
+    document.getElementById('lcep').value=''
     document.getElementById('logradouro').value =endereco=''
     document.getElementById('complemento').value =endereco=''
     document.getElementById('bairro').value =endereco=''
@@ -89,7 +89,7 @@ const pesquisaCep = async() => {
     }
     
 
-document.getElementById('ccep').addEventListener('click',pesquisaCep);
+document.getElementById('puxaCEP').addEventListener('click',pesquisaCep);
 
 
 
